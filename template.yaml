@@ -1,0 +1,12 @@
+Resources:
+  Test:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: main
+      Runtime: go1.x
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /test
+            Method: post
